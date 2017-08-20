@@ -66,7 +66,7 @@ else
     PDFviewer="open"
 fi
 rm -f *.spl *.bak *.dvi *.glo *.gls *.ilg *.ind *.ist \
-    *.ps *.thm *.lof *.loe *.blg  *log *.toc *.log *.out
+    *.ps *.thm *.lof *.loe *.blg *.aux *log *.toc *.log *.out
 $PDFviewer ./"$File_Name".pdf || exit
 echo "*************************************************************************"
 echo "use $CompileName Compile "$File_Name".tex finished!"
