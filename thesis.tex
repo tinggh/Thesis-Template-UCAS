@@ -1,0 +1,39 @@
+
+\documentclass[doublesided]{Style/ucasthesis}% thesis template of UCAS
+
+
+\usepackage[myhdr]{Style/commons}% common settings
+\usepackage{Style/custom}% user defined commands
+\input{Style/mystyle}
+
+
+\begin{document}
+
+\frontmatter
+
+\input{Tex/Frontpages}
+\intotoc{\contentsname}% add a corresponding item to the contents
+\tableofcontents% contents catalog
+\intotoc{\listfigurename}% add a corresponding item to the contents figure
+\listoffigures% figures catalog
+\intotoc{\listtablename}% add a corresponding item to the contents table
+\listoftables% tables catalog
+\input{Tex/Prematter}% list of symbols, preface of books
+
+\mainmatter
+
+\input{Tex/chap01}
+\input{Tex/chap02}
+\input{Tex/chap03}
+\input{Tex/chap04}
+\input{Tex/chap05}
+
+\cleardoublepage
+\backmatter
+
+\intotoc{\bibname}% add the name of the bibliography
+%\bibliographystyle{GBT7714-2005NLang-UTF8}
+\bibliography{Reference/ref}%
+
+\input{Tex/Backmatter}
+\end{document}
