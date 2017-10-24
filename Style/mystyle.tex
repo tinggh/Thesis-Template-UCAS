@@ -1,0 +1,109 @@
+\usepackage{Style/custom}% user defined commands
+%\usepackage[showframe]{geometry}
+\usepackage{enumitem}
+\usepackage{tikz}\def\SwitchToFigureMode{}
+\usetikzlibrary{automata,arrows,positioning}
+\usepackage{cancel, color}
+\usepackage{latexsym, amssymb, amsmath, amsbsy,amsopn, amstext}
+\usepackage{graphicx,hyperref,booktabs}
+\usepackage{breqn,bbold}
+\usepackage{enumitem}   
+\usepackage{epstopdf,subcaption}
+%\usepackage[textwidth=16cm,textheight=21.5cm]{geometry}
+              
+
+%\topmargin 0cm \textwidth 16cm \textheight 21.5cm
+%\def\baselinestretch{1.2}
+%\usepackage{tikz} % \usetikzlibrary{arrows}
+%\usetikzlibrary{calc,through}
+%\def\SwitchToFigureMode{}
+
+%-------------------------
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\cod}{cod}
+\DeclareMathOperator{\const}{const.}
+\DeclareMathOperator{\Span}{Span}
+\DeclareMathOperator{\SpanRow}{SpanRow}
+\DeclareMathOperator{\Col}{Col}
+\DeclareMathOperator{\Row}{Row}
+\DeclareMathOperator{\trace}{trace}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\lcm}{l.c.m.}
+\DeclareMathOperator{\withp}{w.p.}
+\DeclareMathOperator{\ad}{ad}
+\DeclareMathOperator{\ar}{ar}
+\DeclareMathOperator{\argmax}{argmax}
+\DeclareMathOperator{\pow}{P}
+\DeclareMathOperator{\blkdiag}{blkdiag}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator\BR{{BR}}
+
+\def\cal{\mathcal}
+\def\B{{\cal B}}
+\def\T{{\bf T}}
+\def\F{{\cal F}_{\ell}}
+\def\dotx{\dot {x}}
+\def\pa{\partial}
+\def\dsup{\displaystyle\sup}
+\def\ra{\rightarrow}
+\def\Ra{\Rightarrow}
+\def\la{\leftarrow}
+\def\lra{\leftrightarrow}
+\def\Lra{\Leftrightarrow}
+\def\ua{\uparrow}
+\def\da{\downarrow}
+\def\w{\wedge}
+\def\v{\vee}
+\def\bv{\veebar}
+\def\V{{\cal V}}
+\def\a{\alpha}
+\def\b{\beta}
+\def\d{\delta}
+\def\e{\epsilon}
+\def\D{\Delta}
+\def\lmd{\lambda}
+\def\Lmd{\Lambda}
+\def\od{\ltimes}
+\def\os{\oslash}
+\def\ot{\otimes}
+\def\o{\omega}
+\def\O{\Omega}
+\def\M{{\cal M}}
+\def\L{{\cal L}}
+\def\P{{\cal P}}
+\def\N{{\cal N}}
+\def\H{{\cal H}}
+\def\G{{\cal G}}
+\def\gam{\gamma}
+\def\Gam{\Gamma}
+\def\s{\sigma}
+\def\S{\Sigma}
+\def\t{\theta}
+\def\td{\bigtriangledown}
+\def\vecz{\mathbb{0}}
+\def\veco{\mathbb{1}}
+\def\T{\mathfrak{T}}
+\def\r{\Upsilon}
+\newcommand{\R}{{\mathbb R}}
+
+%\newcommand{\C}{{\mathbb C}}
+\newcommand{\GM}{{\mathbb G}}
+\newcommand{\Z}{{\mathbb Z}}
+\def\FBox{\fbox{\rule[0.1cm]{1pt}{0pt}}}
+\def\dlimmax{\mathop{\displaystyle\limmax}\limits}
+\def\dlimsup{\mathop{\limsup}\limits}
+\def\dsum{\mathop{\sum}\limits}
+\def\thefootnote{*}
+\def\proof{\indent{\it 证明:\ } \ignorespaces}
+\def\endproof{\vbox{\hrule height0.6pt\hbox{\vrule height1.3ex width0.6pt\hskip0.8ex\vrule width0.6pt} \hrule height0.6pt}\vskip 3mm}
+
+%\newtheorem{cor}[thm]{Corollary}
+\newtheorem{thm}{定理}[section]
+\newtheorem{lem}[thm]{引理}
+\newtheorem{cor}[thm]{推论}
+\newtheorem{dfn}[thm]{定义}
+\newtheorem{prp}[thm]{命题}
+\newtheorem{exa}[thm]{例}
+\newtheorem{rem}[thm]{注}
+\newtheorem{alg}[thm]{算法}
+\newtheorem{asm}[thm]{假设}
